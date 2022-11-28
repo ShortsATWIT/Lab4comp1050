@@ -1,0 +1,29 @@
+public class RoomPeople {
+static int totalNumber = 0;
+private int numberInRoom;
+
+public void addOneToRoom()
+{
+numberInRoom++;
+totalNumber++;
+}
+
+public void removeOneFromRoom()
+{
+if (numberInRoom > 0)
+{
+numberInRoom--;
+totalNumber--;
+}
+}
+
+public int getNumber()
+{
+return numberInRoom;
+}
+
+public static int getTotal()
+{
+return totalNumber;
+}
+}
