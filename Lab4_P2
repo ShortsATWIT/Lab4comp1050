@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.lang.*;
+
+public class Lab4_P2 {
+	public static void main(String[] args)
+	{
+	RoomPeople a = new RoomPeople();
+	RoomPeople b = new RoomPeople();
+
+	// Add two to room a
+	a.addOneToRoom();
+	a.addOneToRoom();
+
+	// Add three to room b
+	b.addOneToRoom();
+	b.addOneToRoom();
+	b.addOneToRoom();
+
+	System.out.println("Room a holds " + a.getNumber() + "\nRoom b holds " + b.getNumber());
+	System.out.println("Total in all rooms is " + RoomPeople.getTotal());
+	// remove two from both rooms
+	a.removeOneFromRoom();
+	a.removeOneFromRoom();
+
+	b.removeOneFromRoom();
+	b.removeOneFromRoom();
+
+	System.out.println("Room a holds " + a.getNumber() + "\nRoom b holds " + b.getNumber());
+	System.out.println("Total in all rooms is " + RoomPeople.getTotal());
+
+	a.removeOneFromRoom();
+	a.removeOneFromRoom();
+
+	System.out.println("Room a holds " + a.getNumber() + "\nRoom b holds " + b.getNumber());
+	System.out.println("Total in all rooms is " + RoomPeople.getTotal());
+
+	}
+	}
