@@ -1,0 +1,43 @@
+  public class MyDataPoint {
+	
+	double x, y ;
+
+	public MyDataPoint() {
+		this(0, 0) ;
+	}
+
+	public MyDataPoint(double x, double y) {
+		
+		this.x = x;
+		this.y = y;
+	}
+
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+	
+	public double distance(MyDataPoint other) {
+		double xDist = this.x - other.x ;
+		double yDist = this.y - other.y ;
+		return Math.sqrt(xDist*xDist + yDist*yDist) ;
+	}
+	
+	public double distance(double x, double y) {
+		double xDist = this.x - x ;
+		double yDist = this.y - y ;
+		return Math.sqrt(xDist*xDist + yDist*yDist) ;
+	}
+
+} 
